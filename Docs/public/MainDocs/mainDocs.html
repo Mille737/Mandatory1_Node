@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../index.css">
+    <title>Main Docs</title>
+</head>
+<body>
+    <div id="header"><a href="/"><img class="logo" src="logo.png"></a></div>
+    <div class="docs_page">
+        <div class="subject" id="html">
+            <h1>HTML</h1>
+            <div>Use HTML to structure your web page. Elements will tell the browser how to display your content.</div>
+            <div>Add attributes to your elements to provide additional information.</div>
+            <img class="codeExample" src="htmlExample.png">
+            <div>This is how and HTML page is structured, add your desired elements within the body tag.</div>
+        </div>
+        <div class="subject" id="css">
+            <h1>CSS</h1>
+            <div>Use CSS to style your web page.</div>
+            <div>You can style with css in-line, internally or externally.</div>
+            <div>CSS can be used to choose colors, font styles, sizes and much more.</div>
+            <img class="codeExample" src="cssExample.png">
+            <div>Select which element to style via the element name, class or id.</div>
+        </div>
+        <div class="subject" id="jquery">
+            <h1>jQuery</h1>
+            <div>JavaScript gives your page functionality. jQuery is a JavaScript library, imported in your HTML file within a script tag.</div>
+            <div>Use jQuery to simplify your JavaScript usage. With jQuery you can use one line methods that otherwise would require multiple lines of code.</div>
+            <div>Use AJAX to update a page without reloading, request and receive data from a server.</div>
+            <div>Use jQuery and AJAX get and post methods to send and receive data from the server.</div>
+            <div>The get method request data from a specific resource: $.get(URL,callback);</div>
+            <div>The post method sends data to be processed to a specified resource: $.post(URL,data,callback);</div>
+            <div>jQuery also simplifies DOM manipulation. </div>
+            <div>Here are some examples of what you can use jquery for:</div>
+            <h2>Example 1: Swap values</h2>
+            <input class="input-left" placeholder="place here" />
+            <button id="teleport-btn">Teleport</button>
+            <input class="input-right" placeholder="place here" />
+            <div><img class="codeExample" src="jQuery2.png"></div>
+            <h2>Example 2: Change styling with jQuery.</h2>
+            <ol>
+                <li>Point 1</li>
+                <li>Point 2</li>
+                <li>Point 3</li>
+            </ol>
+            <img class="imageStyle2" src="jQuery1.png">
+            <ol id="first-list">
+                <li>Point 1</li>
+                <li>Point 2</li>
+                <li>Point 3</li>
+            </ol>
+        </div>
+        <div class="subject" id="express">
+            <h1>Express API</h1>
+            <div>Node.js is server side JavaScript. Express is a node.js framework. Express is used when creating http requests.</div>
+            <div>Express can be used to return HTML, files, and JSON</div>
+            <img src="getRequest.png" class="codeExample">
+            <div>Use Express to start your server and receive and send your data.</div>
+            <img class="imageStyle2" src="express.png">
+            <div>Import express with require(), and create a const app to access the methods for routing HTTP requests.</div>
+            <div>To serve static files such as images use express.static(). express.json and express.urlencoded are part of bodyParser;</div>
+            <div>express.json recognize the incoming Request Object as a JSON Object.</div>
+            <div>The get and post methods have two parameters, a path for the request and a request and response.</div>
+            <div>In the example above the get request return the wanted HTML files. The post takes data from a form and send this data.</div>
+            <div>The listen method takes a the specified port and starts the server on that port.</div>
+            <div>One can use a get request to send data with query string data: You can convert your data to query string parameters and pass them along to the server.</div>
+            <div>However typically ones uses post methods for this, especially when creating a RESTful API.</div>
+            <h2>RESTful API</h2>
+            <div>Representational State Transfer is an architectural standard for APIs with a set of rules to ensure a uniform representation.</div>
+            <div>When creating a RESTful API make sure to be consistent in using GET, POST, PUT and DELETE for CRUD operations.</div>
+            <h2>Terminal</h2>
+            <div>Use the terminal on your computer to execute commands.</div>
+            <div>The following have been used in this course: cd, ls, sudo, npm, node, nodemon, budo.</div>
+            <ul>
+                <li><b>cd:</b> used for navigating through out your computers folders and files.</li>
+                <li><b>ls:</b> used to return every item within a folder.</li>
+                <li><b>sudo:</b> stands for superuser do, used when a higher level of security privileges is need for example installing a package globally.</li>
+                <li><b>npm:</b> node package manager, used to download packages such as nodemon.</li>
+                <li><b>node:</b> runs your node.js application.</li>
+                <li><b>nodemon:</b> runs node.js based applications and restarts application when changes are made.</li>
+                <li><b>budo:</b> starts a server. Use --live to refresh your browser when changes are made.</li>
+            </ul>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./main.js"></script>
+</body>
+</html>
